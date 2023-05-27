@@ -19,7 +19,7 @@ filtering of results.
 
 ### LotrClient
 
-The
+The client uses the `requests` package to maintain a session to fetch query results using GET requests.
 
 ### LotrQueryBuilder
 
@@ -28,9 +28,9 @@ The `LotrQueryBuilder` class to build queries for the LotR API.
 This class provides methods to add various query parameters like page,
 limit, offset, sort, and filter.
 
-Examples:
+### Examples
 
-```
+```python
     query_builder = LotrQueryBuilder()
     query_builder.paginate(page=1, limit=10)
     query_builder.add_sort(query.Sort("title", SortOrder.DESCENDING))
@@ -64,8 +64,8 @@ There are also several supporting modules:
    - Frequency Penalty: 0
    - Presence Penalty: 0
    - Best of: 3
-   And prompts similar to the following:
-   > ```
+   - And prompts similar to the following:
+   > ```python
    > class Log:
    >     def __init__(self, path):
    >         dirname = os.path.dirname(path)
@@ -101,7 +101,7 @@ There are also several supporting modules:
    >
    > Here's how an expert API developer would document the class using docstrings:
    >
-   > ```
+   > ```python
    > class Log:
    >     """A class to represent a Log file. This class is used to write JSON
    >     formatted logs to a file.
