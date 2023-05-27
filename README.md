@@ -9,7 +9,7 @@ helps construct query parameters for those requests.
 
 Example usage:
 
-```
+```python
     from lotr_sdk import client
     from lotr_sdk import query
     from lotr_sdk import options
