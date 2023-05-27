@@ -81,6 +81,7 @@ Tests are divided between the following classes:
 To install dependencies, run `poetry install`.
 
 To run a subset of tests, use the following syntax:
+
 `poetry run pytest tests/test_lotr_sdk.py::TestLotrClientUnit` to run only tests in that test class.
 
 `poetry run pytest tests/test_lotr_sdk.py::TestLotrClientUnit::test_get_books` to run only the
@@ -88,16 +89,16 @@ To run a subset of tests, use the following syntax:
 
 ## Publish
 To install dependencies, run:
-`poetry install`
+```poetry install```
 
 To set your PyPI token:
-`poetry config pypi-token.pypi your-api-token`
+```poetry config pypi-token.pypi your-api-token```
 
 To build the project, run:
-`poetry build`
+```poetry build```
 
 To publish:
-`poetry publish`
+```poetry publish```
 
 Alternatively:
-`poetry publish --build`
+```poetry publish --build```
