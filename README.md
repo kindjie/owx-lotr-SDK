@@ -14,8 +14,8 @@ Example usage:
     from lotr_sdk import query
     from lotr_sdk import options
 
-    # Use query builder to construct parameters for client fetch requests.
-    query_builder = query.LotrQueryBuilder(models.BOOK)
+    # Use query builder to construct (optional) parameters for client fetch requests.
+    query_builder = query.LotrQueryBuilder()
     query_builder \
         .paginate(page=1, limit=10) \
         .add(query.Sort("title", SortOrder.DESCENDING))
@@ -46,6 +46,8 @@ it contains the `LotrQueryBuilder` class with the following primary methods:
   query. These classes can also be found in the `lotr_sdk.client` module.
 - `build()` returns the query parameters as a dictionary, ready to be used with the `LotrClient`
   interface.
+  
+Using the query builder is optional.
 
 ## LotrClient
 
